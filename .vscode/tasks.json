@@ -10,14 +10,14 @@
       },
       "problemMatcher": [],
       "label": "Build",
-      "detail": "pnpm build"
+      "detail": "yarn build"
     },
     {
       "type": "npm",
       "script": "test:dev",
       "problemMatcher": [],
       "label": "Test (development)",
-      "detail": "pnpm test:dev",
+      "detail": "yarn test:dev",
       "group": {
         "kind": "test",
         "isDefault": true

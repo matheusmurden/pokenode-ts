@@ -36,7 +36,7 @@
     "lint:pkg": "sort-package-json",
     "lint:tsc": "tsc --diagnostics",
     "prepare": "is-ci || husky install",
-    "prepublishOnly": "pnpm build",
+    "prepublishOnly": "yarn build",
     "sort": "sort-package-json package.json",
     "test:ci": "vitest --silent --run",
     "test:coverage": "vitest run --coverage",
