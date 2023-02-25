@@ -4,7 +4,7 @@ import {
   setupCache,
   AxiosCacheInstance,
   CacheAxiosResponse,
-  CacheRequestConfig,
+  InternalCacheRequestConfig,
   CacheOptions,
 } from 'axios-cache-interceptor';
 import { BaseURL } from '../constants';
@@ -71,7 +71,7 @@ export class BaseClient {
     });
 
     this.api.interceptors.request.use(
-      (config: CacheRequestConfig) => handleRequest(config, this.logger),
+      (config: InternalCacheRequestConfig) => handleRequest(config, this.logger),
       (error: AxiosError<string>) => handleRequestError(error, this.logger)
     );
 
